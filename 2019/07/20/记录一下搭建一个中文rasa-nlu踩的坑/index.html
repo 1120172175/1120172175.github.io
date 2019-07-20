@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="这两天可以说是都用来调模型的error了，一波未平一波又起 原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的。 http://www.crownpku.com/2017/07/27/%E7%94%A8Rasa_NLU%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AD%E6%96%87NLU%E7%B3%BB%E7%BB%9F.ht">
+<meta name="description" content="这两天可以说是都用来调模型的error了，一波未平一波又起 原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的（本篇和官方教程辅助使用更佳哦）。 http://www.crownpku.com/2017/07/27/%E7%94%A8Rasa_NLU%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AD%E6%96%87NLU%E7%B">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记录一下搭建一个中文rasa-nlu踩的坑">
 <meta property="og:url" content="http://yoursite.com/2019/07/20/记录一下搭建一个中文rasa-nlu踩的坑/index.html">
 <meta property="og:site_name" content="Loren&#39;s blog">
-<meta property="og:description" content="这两天可以说是都用来调模型的error了，一波未平一波又起 原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的。 http://www.crownpku.com/2017/07/27/%E7%94%A8Rasa_NLU%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AD%E6%96%87NLU%E7%B3%BB%E7%BB%9F.ht">
+<meta property="og:description" content="这两天可以说是都用来调模型的error了，一波未平一波又起 原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的（本篇和官方教程辅助使用更佳哦）。 http://www.crownpku.com/2017/07/27/%E7%94%A8Rasa_NLU%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AD%E6%96%87NLU%E7%B">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-20T14:00:00.532Z">
+<meta property="og:updated_time" content="2019-07-20T14:02:06.245Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记录一下搭建一个中文rasa-nlu踩的坑">
-<meta name="twitter:description" content="这两天可以说是都用来调模型的error了，一波未平一波又起 原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的。 http://www.crownpku.com/2017/07/27/%E7%94%A8Rasa_NLU%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AD%E6%96%87NLU%E7%B3%BB%E7%BB%9F.ht">
+<meta name="twitter:description" content="这两天可以说是都用来调模型的error了，一波未平一波又起 原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的（本篇和官方教程辅助使用更佳哦）。 http://www.crownpku.com/2017/07/27/%E7%94%A8Rasa_NLU%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AD%E6%96%87NLU%E7%B">
 
 
 
@@ -320,8 +320,10 @@
 
       
         <p>这两天可以说是都用来调模型的error了，一波未平一波又起</p>
-<p>原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的。</p>
+<p>原始的教程参考如下网站，但是确实还是有一些地方没有说清楚的（本篇和官方教程辅助使用更佳哦）。</p>
 <pre><code>http://www.crownpku.com/2017/07/27/%E7%94%A8Rasa_NLU%E6%9E%84%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AD%E6%96%87NLU%E7%B3%BB%E7%BB%9F.html
+</code></pre><p>讲道理github上的README更良心</p>
+<pre><code>https://github.com/crownpku/rasa_nlu_chi
 </code></pre><p>首先是安装结巴分词，这个没什么问题</p>
 <pre><code>$ pip install jieba
 </code></pre><p>然后是安装MITIE，这个就比较坑了，需要提前安装一些东西，配一下环境才能安装成功，安装MITIE参考下面的博客(劝退没有安装vs的同志)：</p>
